@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WF Barbearia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .imagem-capa {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .botoes {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      padding: 0 20px;
+    }
+
+    .botao {
+      background-color: #ffd400;
+      color: #000;
+      padding: 14px 20px;
+      width: 100%;
+      max-width: 300px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .botao:hover {
+      background-color: #ffd400;
+    }
+
+    .localizacao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .localizacao:hover {
+      color: #ffd400;
+    }
+
+    .localizacao img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img 
+        src="fundowf.png" 
+        alt="Capa da Barbearia" 
+        class="imagem-capa"
+    >
+
+    <div class="botoes">
+      <a href="agendamento.html" class="botao">Agendar Horário</a>
+      <a class="localizacao" href="https://www.google.com/maps/place/Wf+Barbearia/@-15.8024733,-48.1005596,17z/data=!3m1!4b1!4m6!3m5!1s0x935bcd9ceac0dc45:0x453445d92aba13a1!8m2!3d-15.8024785!4d-48.0979847!16s%2Fg%2F11gtd3l7m9?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><br>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Ícone de Localização">
+        Ver no Google Maps
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
